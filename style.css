@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+}
+#allPage {
+  background-image: url(images/bgTwoRect.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
+}
+.allSection {
+    padding: 0 3% 3% 5%;
+   
+}
+.sectionWithBtn {
+    z-index: 10;
+}
+/*Header*/
+header {
+    display: flex;
+    justify-content:space-between;
+    flex-basis: 100%;
+    padding: 2% 4% 0 0;
+}
+/*Логотип*/
+.allLogo {
+    display: flex;
+    flex-basis: 20%;
+}
+.contanerLogoLine {
+    flex-basis: 20%;
+    align-items: center;
+    display: flex;
+}
+.contanerLogoLine img {
+    width: 65px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo p {
+    font-size: 4vw;
+    font-family: "roboto_bold";
+    color: rgb(64, 4, 150);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*Навигация*/
+
+nav { 
+    flex-basis: 55%;
+    align-self: center;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    
+}
+nav li a {
+    font-family: "roboto_medium";
+    font-size: 1.7vw;
+    color: #525176;
+    padding-right: 5px;
+}
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;   
+}
+nav ul li a:hover {
+    cursor: pointer;
+    color: #7c3bd1;
+}
+
+
+/*Бургер-меню*/
+
+
+.burgerMenuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vw;
+}
+.burgerMenuActive .burgerMenuBtn {
+    position: fixed;
+    top: 1.5vw;
+    right: 3vw;
+    z-index: 15;
+}
+.burgerMenuBtn:hover {
+    cursor: pointer;
+}
+.burgerMenuBtn:hover>.burgerMenuLines,
+.burgerMenuBtn:hover>.burgerMenuLines::before, 
+.burgerMenuBtn:hover>.burgerMenuLines::after {
+    cursor: pointer;
+    background-color: #7c3bd1; 
+}
+.burgerMenuActive .burgerMenuBtn:hover>.burgerMenuLines
+{
+      background-color: transparent;  
+}
+.burgerMenuLines {
+    position: relative; 
+}
+.burgerMenuLines, .burgerMenuLines::before, .burgerMenuLines::after {
+    width: 4vw;
+    height: .5vw;
+    background-color: #535176;
+    border-radius: 100px;
+    
+}
+.burgerMenuLines::before, .burgerMenuLines::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: transform .2s ease-in, top 0.2s linear .2s;
+}
+.burgerMenuLines::before {
+    top: -1vw;
+}
+.burgerMenuLines::after {
+    top: 1vw;
+}
+.burgerMenuLines:hover, .burgerMenuLines:hover:before, .burgerMenuLines:hover:after {
+    background-color: #7c3bd1;
+}
+
+/*Для изменения "бургера на крестик"*/
+
+.burgerMenuActive .burgerMenuLines {
+    background-color: transparent;   
+}
+
+
+.burgerMenuActive .burgerMenuLines::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform .2s ease-in .2s;
+    
+}
+.burgerMenuActive .burgerMenuLines::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform .2s ease-in .2s;
+}
+/*Навигация выпадающего меню*/
+.burgerMenuNav {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    background-color: white;
+    /*border-radius: 20px;*/
+    overflow-y: auto;
+    right: -100%;
+    top:0;
+    padding-top: 6vw;
+    border: solid .05vw #535274;
+}
+.burgerMenuActive .burgerMenuNav {
+    right: 0;
+    top: 0;
+    
+}
+
+.burgerMenuLink {
+    padding: 2.5vw;
+    font-family: "roboto_medium";
+    font-size: 1.7vw;
+    color: #525176;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold; 
+    border-top: solid .05vw #535274;
+}
+.burgerMenuLink:hover {
+    color:#7c3bd1;
+    cursor: pointer;
+    background-color: #e4daf5;
+}
+
+/*Основные секции*/ 
+
+.titleTextTwoBtnCovidAndIcons {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-family: "roboto_bold";
+    font-size: 12.7vw;
+    text-transform: uppercase;
+    color: #e4daf5;
+}
+.textUnderTitleAndArrows {
+    display: flex;
+    justify-content: space-between;
+}
+.textUnderTitle {
+    font-family: "roboto_regular";
+    font-size: 1.2vw;
+    color: #535274;
+    width: 45%;
+}
+.sectionWithBtn {
+}
+/*Стрелочки*/
+
+.twoArrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120%;
+    max-height: 100px;
+}
+.arrow {
+    width: 2.1vw;
+    height: 2.1vw;
+    border: solid 2px #7c3bd1;
+}
+.arrow:hover {
+    cursor: pointer;
+}
+
+/*Кнопки*/
+
+.twoBtn {
+    display: flex;
+    padding-top: 2%;
+    width: 42%;
+    height: 70%;
+    justify-content: space-between; 
+    position: relative;
+    z-index: 10;
+}
+.btnLearnMore, .btnContactUs {
+    font-family: "roboto_medium";
+    font-size: 1.5vw;
+    border-radius: 100px;
+    max-height: 75px;
+    max-width: 275px;
+    height: auto;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    vertical-align: middle;
+    border: solid 2px #7c3bd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adaptiveBtn {
+    padding-bottom: 10%;
+    padding-top: 3%;
+}
+.btnLearnMore {
+    background-color: white;
+    color: #7c3bd1;
+}
+.btnContactUs {
+    background-color: white;
+    color: #7c3bd1;
+}
+.btnLearnMore:hover,  .btnLearnMore:focus {
+    background-color: #7c3bd1;
+    color: white;
+    cursor: pointer;
+}
+.btnContactUs:hover {
+    background-color: #7c3bd1;
+    color: white;
+    cursor: pointer;
+}
+/*Social Icons*/
+
+.socialIcons {
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    z-index: 11;  
+}
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 25%;
+}
+
+.facebook {
+    width: 0.9vw;
+    height: 1.8vw;
+}
+
+.twitter {
+    width: 2.2vw;
+    height: 1.8vw;
+}
+
+.instagram {
+    width: 1.8vw;
+    height: 1.8vw;
+}
+/*Дата*/
+.now {
+    font-family: "roboto_medium";
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 4%;
+    right: 25%; 
+}
+#date {
+    font-size: 3vw;
+    }
+#mounth {
+    font-size: 2vw;
+   
+}
+/*Картинка с вирусами*/
+
+.contZ {
+    position: absolute;
+    top: 14%;
+    right: 10%;
+}
+.contanerCorona {
+    position: relative;
+    z-index: 4;
+}
+.bigCorona {
+    width: 57vw;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
