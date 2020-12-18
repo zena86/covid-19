@@ -17,7 +17,6 @@ html, body {
 .container {
 	max-width: 1595px;
     margin: 0 auto;
-    padding: 0 1vw;
 }
 
 .wrapper {
@@ -35,32 +34,49 @@ html, body {
     
 }
 
-.main-screen {
-	
+.main-screen {	
     flex: 1 0 100%;
 /*	background-color: pink;*/
 }
-.main-screen__bg {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
+.header {
+	background-color: yellow;
+	height: 100px;
+}
+.header__container {
 	height: 100%;
+	background-color: blue;
+	display: flex;
+	align-items: center;
+}
+.header__body {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: aquamarine;
+}
+.header__nav {
+	flex-grow: 1;
+	background-color: chartreuse;
+}
+.header__menu {
+	display: flex;
+	justify-content: flex-end;
+}
+.main-screen__bg {
+	height: calc(100vh - 100px);
 	background-image: url(images/bg.png);
-	background-position: center;
+	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: cover;
-	
+	background-size: cover;	
 }
 .main-screen__content {
 /*	background-color: orange;*/
-/*	max-width: 60%;*/
-	margin-top: 15%;
+	padding-top: 5%;
 }
 
 .main-screen__title {
     font-size: 220px;
-	font-weight: 700;
+	font-weight: 900;
     text-transform: uppercase;
     color: #e4daf5;
 }
