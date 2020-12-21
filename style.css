@@ -39,28 +39,49 @@ html, body {
 /*	background-color: pink;*/
 }
 .header {
-	background-color: yellow;
+/*	background-color: yellow;*/
 	height: 100px;
 }
 .header__container {
 	height: 100%;
-	background-color: blue;
+/*	background-color: blue;*/
 	display: flex;
 	align-items: center;
 }
 .header__body {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	width: 100%;
-	background-color: aquamarine;
+/*	background-color: aquamarine;*/
 }
 .header__nav {
 	flex-grow: 1;
-	background-color: chartreuse;
+/*	background-color: chartreuse;*/
+}
+.header__logo a {
+	color: #390992;
+	font-size: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.header__logo a span {
+	font-weight: 700;
 }
 .header__menu {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
+}
+.header__menu li {
+	list-style: none;
+}
+.header__menu li a {
+	font-size: 22px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #525176;
+	
 }
 .main-screen__bg {
 	height: calc(100vh - 100px);
