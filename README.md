@@ -1,4 +1,4 @@
-<h1 align="center">Страница "Сovid-19"</h1>
+<h1 align="center">Главная страница "Сovid-19"</h1>
 
 DEMO [Сovid-19](https://zena86.github.io/covid-19/)
 
@@ -12,7 +12,7 @@ CSS3     |            |Font Awesome|Adobe Photoshop|           |           |
 * медиазапросов
 * гибкости верстки
 
-**1. Полноэкранный (fullscreen) блок на главной странице**
+**1. Полноэкранный (fullscreen) блок**
 
 ![Screenshort 1](/images/imgreadme/screen-main.png)
 &nbsp;
