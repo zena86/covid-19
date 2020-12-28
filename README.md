@@ -2,11 +2,11 @@
 
 DEMO [Сovid-19](https://zena86.github.io/covid-19/)
 
-Языки    | Библиотеки |Сервисы     | Инструменты   |Методология|Прочие     |
----------|------------|------------|---------------|-----------|-----------|
-HTML5    |jQuery      |Google Fonts|Brackets       |БЭМ        |CSS flexbox|
-CSS3     |            |Font Awesome|Adobe Photoshop|           |           |
-
+Языки     | Библиотеки |Сервисы     | Инструменты   |Методология|Прочие     |
+----------|------------|------------|---------------|-----------|-----------|
+HTML5     |jQuery      |Google Fonts|Brackets       |БЭМ        |CSS flexbox|
+CSS3      |            |Font Awesome|Adobe Photoshop|           |           |
+JavaScript|            |            |               |           |           |
 
 Адаптивность реализована за счет:
 * медиазапросов
